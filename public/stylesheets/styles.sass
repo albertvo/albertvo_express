@@ -1,0 +1,68 @@
+
+.container-fluid 
+    margin-right: auto
+    margin-left: auto
+    max-width: 940px 
+
+// SaSS
+$black: #000000
+$white: #ffffff
+$bg_color: #0a1016
+$preheader_color: #17446b
+$highlight_color: #17446b
+$cta_color: #e9241f
+$p_color: #898989
+$margin: 16px
+
+.extra-margin-top
+    margin: 15px 0 15px 0
+
+body  
+    background: $bg_color
+    color: $p_color
+    background: $bg_color url('/images/bg_city.png') no-repeat center bottom
+    
+#pre-header
+    background: $preheader_color
+    height: 10px
+
+#header
+    background: $black
+    text-align: middle
+    ul
+        list-style-type: none
+        margin: 25px 0 0 0
+        padding: 0
+        overflow: hidden
+        
+        li
+            float: left
+            margin: 0 10px 0 0
+            
+            a
+                display: block
+                color: $p_color
+                padding: 5px
+                font-weight: bold
+            a:hover
+                color: $cta_color
+                text-decoration: none
+                
+            a.selected
+                background-color: $highlight_color
+                color: $white
+
+#main
+    background:transparent
+    min-height: 300px
+    margin: 0 0 300px 0
+    .project
+        min-height: 5px
+        background: $p_color
+#footer
+    min-height: 185px
+    background: $black
+    
+
+#first-name
+    color: $cta_color
