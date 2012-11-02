@@ -4,21 +4,27 @@
 #header
     .container-fluid
         .row-fluid
-            .span6
+            .span8
                 h1
-                    a(href="/")
-                        img( src="images/logo.png", alt="#{title}" )
-            .span6
+                    span(id="albert") albert
+                    span(id="vo") vo
+            .span4
                 ul
                     li 
                         a(href="/" , class="selected") work
                     li 
                         a(href="/") skillset
 .container-fluid
-    div( class="row-fluid extra-margin-top")
+    div( id="opt-in", class="row-fluid extra-margin-top ")
+        .span6 
+            p.big Hi <a id="first-name" onclick="document.getElementById('opt-in').setAttribute('style','height: 200px');">there</a>! 
+            p I'm a full stack developer based in Dallas, Texas, USA. I want to work on cool project thats all!
         .span6
-            p Howdy <span id="first-name">stranger</span>! 
-            p I'm a software developer based in Dallas, Texas, USA. I want to work on cool project thats all!
+            p test 2    
+    div( id="intro", class="row-fluid extra-margin-top")
+        .span6
+            p Howdy <a id="first-name" onclick="document.getElementById('opt-in').setAttribute('style','height: 200px');">stranger</a>! 
+            p I'm a full stack developer based in Dallas, Texas, USA. I want to work on cool project thats all!
         .span6
             p test 2
         
@@ -40,6 +46,6 @@
 
         
 #footer
-     script(type="text/javascript", src="javascripts/main.js")
+     
 
      

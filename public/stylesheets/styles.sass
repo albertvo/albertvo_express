@@ -1,3 +1,9 @@
+a
+    text-decoration: none
+
+a:hover
+    text-decoration: none
+
 
 .container-fluid 
     margin-right: auto
@@ -5,17 +11,51 @@
     max-width: 940px 
 
 // SaSS
-$black: #000000
+$black: #060607
+$dark_purple: #252631
 $white: #ffffff
 $bg_color: #0a1016
-$preheader_color: #17446b
-$highlight_color: #17446b
-$cta_color: #e9241f
+$preheader_color: #464c81
+$highlight_color: #464c81 
+$subdued_link_color: #464c81
+$cta_color: #ed601d
 $p_color: #898989
 $margin: 16px
 
+#albert
+    font-family: 'Ubuntu', sans-serif
+    font-size: 20px
+    line-height: 20px
+#vo
+    font-family: 'Ubuntu', sans-serif
+    font-size: 20px
+    line-height: 20px
+    color: #983e14
+
+#intro
+    
+
+.big
+    font-family: 'Ubuntu', sans-serif
+    font-size: 30px
+    line-height: 30px
+    height: 300px
+
 .extra-margin-top
     margin: 15px 0 15px 0
+
+.little
+    height: 0px
+    background: $white
+    opacity: 0.1
+    -webkit-transition: height 0.5s ease
+    -moz-transition: height 0.5s ease
+    -o-transition: height 0.5s ease
+    transition: height 0.5s ease
+    -moz-border-radius: 3px
+    -webkit-border-radius: 3px
+    -o-border-radius: 3px
+    border-radius: 3px
 
 body  
     background: $bg_color
@@ -27,11 +67,12 @@ body
     height: 10px
 
 #header
-    background: $black
+    background: $dark_purple
     text-align: middle
+    font-family: 'Ubuntu', sans-serif
     ul
         list-style-type: none
-        margin: 25px 0 0 0
+        margin: 15px 0 0 0
         padding: 0
         overflow: hidden
         
@@ -41,16 +82,26 @@ body
             
             a
                 display: block
-                color: $p_color
-                padding: 5px
+                color: $subdued_link_color
+                padding: 5px 8px 5px 5px
                 font-weight: bold
+                -webkit-transition: color 0.3s ease
+                -moz-transition: color 0.3s ease
+                -o-transition: color 0.3s ease
+                transition: color 0.3s ease
+                -moz-border-radius: 3px
+                -webkit-border-radius: 3px
+                -o-border-radius: 3px
+                border-radius: 3px
+
             a:hover
-                color: $cta_color
+                color: $white
                 text-decoration: none
                 
             a.selected
                 background-color: $highlight_color
                 color: $white
+
 
 #main
     background:transparent
@@ -64,5 +115,12 @@ body
     background: $black
     
 
-#first-name
+a#first-name
     color: $cta_color
+    -webkit-transition: color 0.3s ease
+    -moz-transition: color 0.3s ease
+    -o-transition: color 0.3s ease
+    transition: color 0.3s ease
+
+a#first-name:hover
+    color: $white
