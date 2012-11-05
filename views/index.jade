@@ -1,7 +1,5 @@
-<a href="https://github.com/albertvo"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png" alt="Fork me on GitHub"></a>
 
-
-#header
+div(id="header")
     .container-fluid
         .row-fluid
             .span7
@@ -9,103 +7,179 @@
                     span(id="albert") albert
                     span(id="vo") vo
             .span5
-                ul
+                ul.nav
                     li 
-                        a(href="/" ) work
+                        a(id="work-nav", class="active scrolly", href="#main" ) work
                     li 
-                        a(href="/") skillset
+                        a(id="skillset-nav", class="scrolly", href="#skillset") skillset
                     li 
-                        a(href="/") experience
+                        a(id="resume-nav", class="scrolly", href="#resume") resume
                     li 
-                        a(href="/", class="hire-me") hire me
+                        a(id="hire-me-nav", class="scrolly", href="#hire-me") hire me
 
-.container-fluid
+<a href="https://github.com/albertvo"><img style="position: fixed; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png" alt="Fork me on GitHub"></a>
+
+div(id="main", class="container-fluid section")
     div( id="hero", class="row-fluid extra-margin ")
         .span6 
             p.big I make awesome digital stuff.
             p I'm a full stack engineer looking for my next big challenge.
             p 
-                a( class="learn-more", href="/") learn more > 
+                a( class="learn-more scrolly", href="#skillset") learn more <i class="icon-caret-right"></i> 
         .span6
                
     
         
-    div( class="row-fluid extra-margin ")
+    div( id="skillset", class="row-fluid extra-margin section")
         .span6
             p.big I've learned a thing or two.
             p I have professional experience in many areas
             
-    div( class="row-fluid extra-margin ")
+    div( class="row-fluid extra-margin row-skill")
         .span4
-            h3 Data
+            h3 <i class="icon-table icon-large"></i> Data
+            ul(class="icons")
+                li <i class="icon-ok"></i> Data Modeling 
+                li <i class="icon-ok"></i> T-SQL SQL Server, MySQL
+                li <i class="icon-ok"></i> XML
+                li <i class="icon-ok"></i> JSON
+        .span4
+            h3 <i class="icon-cogs icon-large"></i> Backend Programming
             ul
-                li Data Modeling
-                li T-SQL SQL Server, MySQL
-                li XML
-                li JSON
+                li <i class="icon-ok"></i> REST API 
+                li <i class="icon-ok"></i> C# ASP.NET MVC (VB.NET)
+                li <i class="icon-ok"></i> LINQ to SQL, Entity Framework
+                li <i class="icon-ok"></i> Ruby on Rails
+                li <i class="icon-ok"></i> Node.js
+                li <i class="icon-ok"></i> PHP
         .span4
-            h3 Backend Programming
+            h3 <i class="icon-user icon-large"></i> Frontend Programming
             ul
-                li REST API 
-                li C# ASP.NET MVC (VB.NET)
-                li LINQ to SQL, Entity Framework
-                li Ruby on Rails
-                li Node.js
-                li PHP
+                li <i class="icon-ok"></i> Javascript
+                li <i class="icon-ok"></i> AJAX
+                li <i class="icon-ok"></i> jQuery
+                li <i class="icon-ok"></i> Knockout.js
+    div( class="row-fluid extra-margin  row-skill")
         .span4
-            h3 Front End Programming
+            h3 <i class="icon-tag icon-large"></i> Markup and Design
             ul
-                li Javascript
-                li AJAX
-                li jQuery
-                li Knockout.js
-    div( class="row-fluid extra-margin ")
+                li <i class="icon-ok"></i> HTML
+                li <i class="icon-ok"></i> CSS
         .span4
-            h3 Markup and Design
-            ul
-                li HTML
-                li CSS
-        .span4
-            h3 Graphics/Photography
+            h3 <i class="icon-tint icon-large"></i> Graphics/Photography
             ul 
-                li Photoshop
-                li Illustrator
-                li Lightroom
-                li Aperture
+                li <i class="icon-ok"></i> Photoshop
+                li <i class="icon-ok"></i> Illustrator
+                li <i class="icon-ok"></i> Lightroom
+                li <i class="icon-ok"></i> Aperture
         .span4
-            h3 Mobile and Multimedia
+            h3 <i class="icon-rss icon-large"></i> Mobile and Multimedia
             ul
-                li Flash/ActionScript
-                li CoronaSDK (Lua)
-                li Unity3D (programming)
-    div( class="row-fluid extra-margin ")
+                li <i class="icon-ok"></i> Flash/ActionScript
+                li <i class="icon-ok"></i> CoronaSDK (Lua)
+                li <i class="icon-ok"></i> Unity3D (programming)
+    div( class="row-fluid extra-margin row-skill ")
         .span4
-            h3 Behavior Based Marketing
+            h3 <i class="icon-screenshot icon-large"></i> Behavior Based Marketing
             ul
-                li Automated Remarketing
-                li ExactTarget (Email, SMS)
-                li MailChimp
-                li Coremetrics LiveMail
+                li <i class="icon-ok"></i> Automated Remarketing
+                li <i class="icon-ok"></i> ExactTarget (Email, SMS)
+                li <i class="icon-ok"></i> MailChimp
+                li <i class="icon-ok"></i> Coremetrics LiveMail
         .span4
-            h3 Cloud Platforms
+            h3 <i class="icon-cloud icon-large"></i> Cloud Platforms
             ul
-                li Windows Azure
-                li Amazon AWS
+                li <i class="icon-ok"></i> Windows Azure
+                li <i class="icon-ok"></i> Amazon AWS
                 li Heroku
         .span4
-            h3 Operating Systems
+            h3 <i class="icon-hdd icon-large"></i> Operating Systems
             ul
-                li Windows
-                li Mac OSX
+                li <i class="icon-ok"></i> Windows
+                li <i class="icon-ok"></i> Mac OSX
                 
                 
         
      
+
+
+
+
+
+
+
+
+
+    div( id="resume", class="row-fluid extra-margin section")
+        .span6
+            p.big I've learned a thing or two.
+            p I have professional experience in many areas
+            
+    div( class="row-fluid extra-margin row-skill")
+        .span4
+            h3 <i class="icon-table icon-large"></i> Data
+            ul(class="icons")
+                li <i class="icon-ok"></i> Data Modeling 
+                li <i class="icon-ok"></i> T-SQL SQL Server, MySQL
+                li <i class="icon-ok"></i> XML
+                li <i class="icon-ok"></i> JSON
+        .span4
+            h3 <i class="icon-cogs icon-large"></i> Backend Programming
+            ul
+                li <i class="icon-ok"></i> REST API 
+                li <i class="icon-ok"></i> C# ASP.NET MVC (VB.NET)
+                li <i class="icon-ok"></i> LINQ to SQL, Entity Framework
+                li <i class="icon-ok"></i> Ruby on Rails
+                li <i class="icon-ok"></i> Node.js
+                li <i class="icon-ok"></i> PHP
+        .span4
+            h3 <i class="icon-user icon-large"></i> Frontend Programming
+            ul
+                li <i class="icon-ok"></i> Javascript
+                li <i class="icon-ok"></i> AJAX
+                li <i class="icon-ok"></i> jQuery
+                li <i class="icon-ok"></i> Knockout.js
+    div( class="row-fluid extra-margin  row-skill")
+        .span4
+            h3 <i class="icon-tag icon-large"></i> Markup and Design
+            ul
+                li <i class="icon-ok"></i> HTML
+                li <i class="icon-ok"></i> CSS
+        .span4
+            h3 <i class="icon-tint icon-large"></i> Graphics/Photography
+            ul 
+                li <i class="icon-ok"></i> Photoshop
+                li <i class="icon-ok"></i> Illustrator
+                li <i class="icon-ok"></i> Lightroom
+                li <i class="icon-ok"></i> Aperture
+        .span4
+            h3 <i class="icon-rss icon-large"></i> Mobile and Multimedia
+            ul
+                li <i class="icon-ok"></i> Flash/ActionScript
+                li <i class="icon-ok"></i> CoronaSDK (Lua)
+                li <i class="icon-ok"></i> Unity3D (programming)
+    div( class="row-fluid extra-margin row-skill ")
+        .span4
+            h3 <i class="icon-screenshot icon-large"></i> Behavior Based Marketing
+            ul
+                li <i class="icon-ok"></i> Automated Remarketing
+                li <i class="icon-ok"></i> ExactTarget (Email, SMS)
+                li <i class="icon-ok"></i> MailChimp
+                li <i class="icon-ok"></i> Coremetrics LiveMail
+        .span4
+            h3 <i class="icon-cloud icon-large"></i> Cloud Platforms
+            ul
+                li <i class="icon-ok"></i> Windows Azure
+                li <i class="icon-ok"></i> Amazon AWS
+                li Heroku
+        .span4
+            h3 <i class="icon-hdd icon-large"></i> Operating Systems
+            ul
+                li <i class="icon-ok"></i> Windows
+                li <i class="icon-ok"></i> Mac OSX
         
       
 
         
 #footer
-     
-
      

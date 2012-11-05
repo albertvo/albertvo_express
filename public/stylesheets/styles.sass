@@ -6,14 +6,18 @@ $bg_color: #0a1016
 $preheader_color: #464c81
 $highlight_color: #464c81 
 $subdued_link_color: #464c81
-$cta_color: #aba000
+$cta_color: #d2c502
+$cta_highlight_color: #d2c502
 $display_color: #D8D8D8
 $p_color: #898989
 $margin: 16px
 
 body
     font-family: 'Ubuntu', 'Verdana', sans-serif
-
+    background: $bg_color
+    color: $p_color
+    padding: 70px 0 0 0
+    
 a
     text-decoration: none
 
@@ -21,11 +25,15 @@ a:hover
     text-decoration: none
     color: $white
 
-
 .container-fluid 
     margin-right: auto
     margin-left: auto
     max-width: 940px 
+
+h1
+    padding: 5px 0 5px 25px
+    background: url('/images/logo.png') no-repeat left bottom
+    line-height: 20px
 
 h3
     font-family: 'Ubuntu', 'Verdana', sans-serif
@@ -33,9 +41,14 @@ h3
     font-weight: bold
     font-size: 20px
     line-height: 30px
-    color: $p_color
+    color: $display_color
     
+h3 i
+    margin: 0 10px 0 0 
 
+.row-skill
+    border-top: solid 1px $dark_purple
+    padding: 20px 0 10px 0
 
 #albert
     font-family: 'Ubuntu', 'Verdana', sans-serif
@@ -48,15 +61,13 @@ h3
     font-family: 'Ubuntu',  'Verdana', sans-serif
     font-style: italic
     font-weight: bold
-    font-size: 20px
+    font-size: 18px
     line-height: 20px
     color: $cta_color
-
-#intro
     
 #hero
     background: $bg_color url('/images/hero_city.png') no-repeat center bottom
-    height: 400px
+    height: 340px
 
 .learn-more
     font-family: 'Ubuntu','Verdana', sans-serif
@@ -69,6 +80,7 @@ h3
     -o-transition: color 0.3s ease
     transition: color 0.3s ease
     color: $cta_color
+
 .big
     font-family: 'Ubuntu','Verdana', sans-serif
     font-style: italic
@@ -93,10 +105,7 @@ h3
     -o-border-radius: 3px
     border-radius: 3px
 
-body  
-    background: $bg_color
-    color: $p_color
-    
+
     
 #pre-header
     background: $preheader_color
@@ -104,11 +113,14 @@ body
     border-bottom: solid 1px $bg_color
 
 #header
+    top: 0
     background: $dark_purple
     text-align: middle
     font-family: 'Ubuntu', 'Verdana', sans-serif
     font-style: italic
     font-weight: bold
+    position: fixed
+    width: 100%
     ul
         list-style-type: none
         margin: 15px 0 0 0
@@ -136,24 +148,32 @@ body
             a:hover
                 color: $cta_color
                 text-decoration: none
+                background: none
                 
-            a.hire-me
+            
+            a.active
                 background-color: $cta_color
                 color: $black
+                -webkit-transition: background-color 0.3s ease
+                -moz-transition: background-color 0.3s ease
+                -o-transition: background-color 0.3s ease
+                transition: background-color 0.3s ease
+                
+            a.active:hover
+                background-color: $white
+                
+                
+        li.active
+            color: red        
 
 
-#main
-    background:transparent
+
     
-    margin: 0 0 300px 0
-    .project
-        min-height: 5px
-        background: $p_color
 
 #footer
     min-height: 185px
     background: $black
-    
+    margin: 40px 0 0 0
 
 a#first-name
     color: $cta_color
@@ -164,3 +184,8 @@ a#first-name
 
 a#first-name:hover
     color: $white
+
+ul
+    list-style: none
+    margin: 0 0 0 5px
+
