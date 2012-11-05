@@ -1,15 +1,3 @@
-a
-    text-decoration: none
-
-a:hover
-    text-decoration: none
-
-
-.container-fluid 
-    margin-right: auto
-    margin-left: auto
-    max-width: 940px 
-
 // SaSS
 $black: #060607
 $dark_purple: #252631
@@ -18,34 +6,82 @@ $bg_color: #0a1016
 $preheader_color: #464c81
 $highlight_color: #464c81 
 $subdued_link_color: #464c81
-$cta_color: #ed601d
+$cta_color: #aba000
+$display_color: #D8D8D8
 $p_color: #898989
 $margin: 16px
 
+body
+    font-family: 'Ubuntu', 'Verdana', sans-serif
+
+a
+    text-decoration: none
+
+a:hover
+    text-decoration: none
+    color: $white
+
+
+.container-fluid 
+    margin-right: auto
+    margin-left: auto
+    max-width: 940px 
+
+h3
+    font-family: 'Ubuntu', 'Verdana', sans-serif
+    font-style: italic
+    font-weight: bold
+    font-size: 20px
+    line-height: 30px
+    color: $p_color
+    
+
+
 #albert
-    font-family: 'Ubuntu', sans-serif
-    font-size: 20px
+    font-family: 'Ubuntu', 'Verdana', sans-serif
+    font-style: italic
+    font-weight: bold
+    font-size: 18px
     line-height: 20px
+    color: $display_color
 #vo
-    font-family: 'Ubuntu', sans-serif
+    font-family: 'Ubuntu',  'Verdana', sans-serif
+    font-style: italic
+    font-weight: bold
     font-size: 20px
     line-height: 20px
-    color: #983e14
+    color: $cta_color
 
 #intro
     
+#hero
+    background: $bg_color url('/images/hero_city.png') no-repeat center bottom
+    height: 400px
 
+.learn-more
+    font-family: 'Ubuntu','Verdana', sans-serif
+    font-style: italic
+    font-weight: bold
+    font-size: 20px
+    line-height: 25px
+    -webkit-transition: color 0.3s ease
+    -moz-transition: color 0.3s ease
+    -o-transition: color 0.3s ease
+    transition: color 0.3s ease
+    color: $cta_color
 .big
-    font-family: 'Ubuntu', sans-serif
-    font-size: 30px
-    line-height: 30px
-    height: 300px
+    font-family: 'Ubuntu','Verdana', sans-serif
+    font-style: italic
+    font-weight: bold
+    font-size: 40px
+    line-height: 55px
+    color: $display_color
 
-.extra-margin-top
+.extra-margin
     margin: 15px 0 15px 0
 
 .little
-    height: 0px
+    
     background: $white
     opacity: 0.1
     -webkit-transition: height 0.5s ease
@@ -60,16 +96,19 @@ $margin: 16px
 body  
     background: $bg_color
     color: $p_color
-    background: $bg_color url('/images/bg_city.png') no-repeat center bottom
+    
     
 #pre-header
     background: $preheader_color
     height: 10px
+    border-bottom: solid 1px $bg_color
 
 #header
     background: $dark_purple
     text-align: middle
-    font-family: 'Ubuntu', sans-serif
+    font-family: 'Ubuntu', 'Verdana', sans-serif
+    font-style: italic
+    font-weight: bold
     ul
         list-style-type: none
         margin: 15px 0 0 0
@@ -82,8 +121,8 @@ body
             
             a
                 display: block
-                color: $subdued_link_color
-                padding: 5px 8px 5px 5px
+                color: $display_color
+                padding: 5px 8px 5px 8px
                 font-weight: bold
                 -webkit-transition: color 0.3s ease
                 -moz-transition: color 0.3s ease
@@ -95,21 +134,22 @@ body
                 border-radius: 3px
 
             a:hover
-                color: $white
+                color: $cta_color
                 text-decoration: none
                 
-            a.selected
-                background-color: $highlight_color
-                color: $white
+            a.hire-me
+                background-color: $cta_color
+                color: $black
 
 
 #main
     background:transparent
-    min-height: 300px
+    
     margin: 0 0 300px 0
     .project
         min-height: 5px
         background: $p_color
+
 #footer
     min-height: 185px
     background: $black
