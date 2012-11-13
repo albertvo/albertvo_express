@@ -5,7 +5,7 @@ $white: #ffffff
 $bg_color: #0a1016
 $preheader_color: #464c81
 $highlight_color: #464c81 
-$subdued_link_color: #464c81
+$subdued_color: #32596c
 $cta_color: #d2c502
 $cta_highlight_color: #d2c502
 $display_color: #D8D8D8
@@ -17,9 +17,24 @@ body
     background: $bg_color
     color: $p_color
     padding: 70px 0 0 0
-    
+
+i
+    color: $cta_color
+i.icon-envelope, i.icon-phone, i.icon-linkedin, i.icon-twitter, i.icon-camera-retro
+    color: $p_color
+
+i.icon-ok
+    color: $subdued_color
+
+p
+    margin: 20px 0
+    line-height: 20px
+    font-style: normal
+b
+    color: $display_color
 a
     text-decoration: none
+    color: $p_color
 
 a:hover
     text-decoration: none
@@ -30,10 +45,26 @@ a:hover
     margin-left: auto
     max-width: 940px 
 
+.contactinfo
+    margin: 20px 0 0 3px
+
 h1
-    padding: 5px 0 5px 25px
-    background: url('/images/logo.png') no-repeat left bottom
+    padding: 5px 0 5px 0
+    /*background: url('/images/logo.png') no-repeat left bottom*/
     line-height: 20px
+h2
+    display:block
+    margin: 0 auto
+    background: $bg_color url('/images/divider.png') no-repeat center top
+    height: 100px
+    position: relative
+    top: 50px
+    width: 100px
+    font-size: 14px
+    line-height: 14px
+    padding: 43px 0 
+    text-align: center
+    color: $display_color
 
 h3
     font-family: 'Ubuntu', 'Verdana', sans-serif
@@ -45,6 +76,56 @@ h3
     
 h3 i
     margin: 0 10px 0 0 
+
+.divider    
+    height: 100px
+    margin: 100px auto
+    position:absolute   
+    border-bottom: dotted 1px $dark_purple
+        
+#cta
+    background: $dark_purple
+    -moz-border-radius: 3px
+    -webkit-border-radius: 3px
+    -o-border-radius: 3px
+    border-radius: 3px
+
+#skillset
+    background: $bg_color url('/images/hero_books.png') no-repeat center bottom
+    height: 250px
+
+#work
+    background: $bg_color url('/images/hero_science.png') no-repeat center bottom
+    height: 250px
+
+#resume
+    background: $bg_color url('/images/hero_astronaut.png') no-repeat center bottom
+    height: 250px
+
+#hire-me
+    background: $bg_color url('/images/hero_batman.png') no-repeat center bottom
+    height: 250px
+
+#portfolio
+   
+
+#portfolio img
+    opacity: 0.3
+    -webkit-transition: all 0.3s ease
+    -moz-transition: all 0.3s ease
+    -o-transition: all 0.3s ease
+    transition: all 0.3s ease
+    
+
+    
+
+#portfolio img:hover
+    opacity: 1
+    filter: #{'grayscale(0%)'}
+    -webkit-filter: #{'grayscale(0%)'}
+    -moz-filter: #{'grayscale(0%)'}
+    -o-filter: #{'grayscale(0%)'}
+    -ms-filter: #{'grayscale(0%)'}
 
 .row-skill
     border-top: solid 1px $dark_purple
@@ -65,9 +146,10 @@ h3 i
     line-height: 20px
     color: $cta_color
     
-#hero
+#overview
     background: $bg_color url('/images/hero_city.png') no-repeat center bottom
     height: 340px
+    
 
 .learn-more
     font-family: 'Ubuntu','Verdana', sans-serif
@@ -113,6 +195,7 @@ h3 i
     border-bottom: solid 1px $bg_color
 
 #header
+    z-index: 5
     top: 0
     background: $dark_purple
     text-align: middle
@@ -187,5 +270,8 @@ a#first-name:hover
 
 ul
     list-style: none
-    margin: 0 0 0 5px
+    margin: 20px 0 0 5px
 
+.form-actions
+    background: $bg_color
+    border: none

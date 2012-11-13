@@ -3,13 +3,15 @@ div(id="header")
     .container-fluid
         .row-fluid
             .span7
-                h1
-                    span(id="albert") albert
+                h1                    
+                    span(id="albert") <i class="icon-fire"></i> albert
                     span(id="vo") vo
             .span5
                 ul.nav
                     li 
-                        a(id="work-nav", class="active scrolly", href="#main" ) work
+                        a(id="overview-nav", class="scrolly", href="#overview" ) overview
+                    li 
+                        a(id="work-nav", class="scrolly", href="#work" ) work
                     li 
                         a(id="skillset-nav", class="scrolly", href="#skillset") skillset
                     li 
@@ -17,23 +19,85 @@ div(id="header")
                     li 
                         a(id="hire-me-nav", class="scrolly", href="#hire-me") hire me
 
-<a href="https://github.com/albertvo"><img style="position: fixed; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png" alt="Fork me on GitHub"></a>
+<a href="https://github.com/albertvo"><img style="z-index: 10; position: fixed; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png" alt="Fork me on GitHub"></a>
 
-div(id="main", class="container-fluid section")
-    div( id="hero", class="row-fluid extra-margin ")
+div(id="main", class="container-fluid")
+
+
+    <!-- ---------------------------------------OVERVIEW--------------------------------------------- -->
+
+
+
+    div( id="overview", class="row-fluid extra-margin section")
         .span6 
-            p.big I make awesome digital stuff.
-            p I'm a full stack engineer looking for my next big challenge.
+            p.big I make awesome digital futuristic stuff.
             p 
                 a( class="learn-more scrolly", href="#skillset") learn more <i class="icon-caret-right"></i> 
         .span6
-               
-    
+    div( class="row-fluid extra-margin ")
+        .span7
+            h3 <i class="icon-info-sign icon-large"></i> About
+            p I'm an experienced full stack engineer looking for my next big challenge. I'm one of those mysterious hybrid developer/designers that occasionally surface. 
+            p When i'm not working or researching about cool new technology, I like to spend my time doing photography, basketball, and hanging out with my growing family and friends.
+        .span5
+            h3 <i class="icon-globe icon-large"></i>Get in Touch
+            ul   
+                li <i class="icon-envelope"></i> <a href="http://www.twitter.com/albertvo">work@albertvo.com</a>
+                li <i class="icon-phone"></i> <a href="tel:2143642451">214.364.2451</a>
+            ul.contactinfo 
+                li <i class="icon-linkedin"></i> <a href="http://www.twitter.com/albertvo">LinkedIn</a>
+                li <i class="icon-twitter"></i> <a href="http://www.twitter.com/albertvo">Twitter</a>
+                li <i class="icon-camera-retro"></i> <a href="http://www.flickr.com/photos/albertvo">Flickr</a>
+
+                           
+       
+
+
+
+    <!-- ---------------------------------------WORK--------------------------------------------- --> 
+
+
+
+    div( class="row-fluid extra-margin" ) 
+        .span12
+            .divider
+                h2 work
         
+    div( id="work", class="row-fluid extra-margin section")
+        .span6
+            p.big I've been cookin' up a storm... of web apps.
+            p and frameworks, web services, mobile apps, games, email prorgrams, and creating in general. Here are a few companies I've worked with if that interests you.
+                                     
+    div( id="portfolio", class="row-fluid extra-margin" )
+        .span12
+            img(src="/images/logo_tgifridays.png")         
+            img(src="/images/logo_gorving.png")         
+            img(src="/images/logo_homedepot.png")         
+            img(src="/images/logo_conocophillips.png") 
+            img(src="/images/logo_tcu.png")         
+            img(src="/images/logo_pepsico.png")  
+            img(src="/images/logo_disney.png")  
+            img(src="/images/logo_leapfrog.png") 
+            img(src="/images/logo_bcbg.png") 
+            img(src="/images/logo_gevalia.png")   
+
+   
+
+
+
+    <!-- ---------------------------------------SKILLS--------------------------------------------- -->
+
+
+
+    div( class="row-fluid extra-margin" ) 
+        .span12
+            .divider
+                h2 skills
+
     div( id="skillset", class="row-fluid extra-margin section")
         .span6
             p.big I've learned a thing or two.
-            p I have professional experience in many areas
+            p but i'm more interested in things that I don't know about.
             
     div( class="row-fluid extra-margin row-skill")
         .span4
@@ -46,7 +110,7 @@ div(id="main", class="container-fluid section")
         .span4
             h3 <i class="icon-cogs icon-large"></i> Backend Programming
             ul
-                li <i class="icon-ok"></i> REST API 
+                li <i class="icon-ok"></i> Web Services 
                 li <i class="icon-ok"></i> C# ASP.NET MVC (VB.NET)
                 li <i class="icon-ok"></i> LINQ to SQL, Entity Framework
                 li <i class="icon-ok"></i> Ruby on Rails
@@ -59,12 +123,17 @@ div(id="main", class="container-fluid section")
                 li <i class="icon-ok"></i> AJAX
                 li <i class="icon-ok"></i> jQuery
                 li <i class="icon-ok"></i> Knockout.js
+
     div( class="row-fluid extra-margin  row-skill")
         .span4
             h3 <i class="icon-tag icon-large"></i> Markup and Design
             ul
                 li <i class="icon-ok"></i> HTML
                 li <i class="icon-ok"></i> CSS
+                li <i class="icon-ok"></i> Bootstrap
+                li <i class="icon-ok"></i> SAAS
+                li <i class="icon-ok"></i> RAZOR
+                li <i class="icon-ok"></i> LIQUID
         .span4
             h3 <i class="icon-tint icon-large"></i> Graphics/Photography
             ul 
@@ -73,11 +142,12 @@ div(id="main", class="container-fluid section")
                 li <i class="icon-ok"></i> Lightroom
                 li <i class="icon-ok"></i> Aperture
         .span4
-            h3 <i class="icon-rss icon-large"></i> Mobile and Multimedia
+            h3 <i class="icon-signal icon-large"></i> Mobile and Multimedia
             ul
                 li <i class="icon-ok"></i> Flash/ActionScript
                 li <i class="icon-ok"></i> CoronaSDK (Lua)
                 li <i class="icon-ok"></i> Unity3D (programming)
+
     div( class="row-fluid extra-margin row-skill ")
         .span4
             h3 <i class="icon-screenshot icon-large"></i> Behavior Based Marketing
@@ -91,95 +161,109 @@ div(id="main", class="container-fluid section")
             ul
                 li <i class="icon-ok"></i> Windows Azure
                 li <i class="icon-ok"></i> Amazon AWS
-                li Heroku
+                li <i class="icon-ok"></i> Heroku
+                li <i class="icon-ok"></i> Shopify
         .span4
-            h3 <i class="icon-hdd icon-large"></i> Operating Systems
+            h3 <i class="icon-hdd icon-large"></i> Dev Tools
             ul
                 li <i class="icon-ok"></i> Windows
                 li <i class="icon-ok"></i> Mac OSX
-                
-                
-        
-     
+                li <i class="icon-ok"></i> Visual Studio
+                li <i class="icon-ok"></i> TextMate
+                li <i class="icon-ok"></i> Sublime Text
+                li <i class="icon-ok"></i> Firebug
+              
 
 
+    <!-- ---------------------------------------RESUME--------------------------------------------- -->
+ 
 
-
-
-
-
-
-
+    div( class="row-fluid extra-margin" ) 
+        .span12
+            .divider
+                h2 resume
+    
     div( id="resume", class="row-fluid extra-margin section")
         .span6
-            p.big I've learned a thing or two.
-            p I have professional experience in many areas
+            p.big It's not about where you've been. It's about where you're going.
+            p ...but here is where i've been. =)
+        .span6
             
+
     div( class="row-fluid extra-margin row-skill")
         .span4
-            h3 <i class="icon-table icon-large"></i> Data
-            ul(class="icons")
-                li <i class="icon-ok"></i> Data Modeling 
-                li <i class="icon-ok"></i> T-SQL SQL Server, MySQL
-                li <i class="icon-ok"></i> XML
-                li <i class="icon-ok"></i> JSON
+            h3 <i class="icon-book icon-large"></i> Education
+        .span8
+            p
+                | University of Texas at Austin <br />
+                | B.A in Computer Science 2003 <br />
+                | 2 Years Formal design education at University of Texas at Austin <br />
+                | Business Foundations classes University of Texas at Austin <br />
+
+    div( class="row-fluid extra-margin row-skill")
         .span4
-            h3 <i class="icon-cogs icon-large"></i> Backend Programming
-            ul
-                li <i class="icon-ok"></i> REST API 
-                li <i class="icon-ok"></i> C# ASP.NET MVC (VB.NET)
-                li <i class="icon-ok"></i> LINQ to SQL, Entity Framework
-                li <i class="icon-ok"></i> Ruby on Rails
-                li <i class="icon-ok"></i> Node.js
-                li <i class="icon-ok"></i> PHP
-        .span4
-            h3 <i class="icon-user icon-large"></i> Frontend Programming
-            ul
-                li <i class="icon-ok"></i> Javascript
-                li <i class="icon-ok"></i> AJAX
-                li <i class="icon-ok"></i> jQuery
-                li <i class="icon-ok"></i> Knockout.js
-    div( class="row-fluid extra-margin  row-skill")
-        .span4
-            h3 <i class="icon-tag icon-large"></i> Markup and Design
-            ul
-                li <i class="icon-ok"></i> HTML
-                li <i class="icon-ok"></i> CSS
-        .span4
-            h3 <i class="icon-tint icon-large"></i> Graphics/Photography
-            ul 
-                li <i class="icon-ok"></i> Photoshop
-                li <i class="icon-ok"></i> Illustrator
-                li <i class="icon-ok"></i> Lightroom
-                li <i class="icon-ok"></i> Aperture
-        .span4
-            h3 <i class="icon-rss icon-large"></i> Mobile and Multimedia
-            ul
-                li <i class="icon-ok"></i> Flash/ActionScript
-                li <i class="icon-ok"></i> CoronaSDK (Lua)
-                li <i class="icon-ok"></i> Unity3D (programming)
-    div( class="row-fluid extra-margin row-skill ")
-        .span4
-            h3 <i class="icon-screenshot icon-large"></i> Behavior Based Marketing
-            ul
-                li <i class="icon-ok"></i> Automated Remarketing
-                li <i class="icon-ok"></i> ExactTarget (Email, SMS)
-                li <i class="icon-ok"></i> MailChimp
-                li <i class="icon-ok"></i> Coremetrics LiveMail
-        .span4
-            h3 <i class="icon-cloud icon-large"></i> Cloud Platforms
-            ul
-                li <i class="icon-ok"></i> Windows Azure
-                li <i class="icon-ok"></i> Amazon AWS
-                li Heroku
-        .span4
-            h3 <i class="icon-hdd icon-large"></i> Operating Systems
-            ul
-                li <i class="icon-ok"></i> Windows
-                li <i class="icon-ok"></i> Mac OSX
-        
-      
+            h3 <i class="icon-trophy icon-large"></i> Experience
+        .span8
+            p
+                | <b>PFSWeb - Managing Solutions Architect – 2012 – 2013 </b><br />
+                | Managed a technical team responsible for automated email marketing for major luxury retail brands. I was responsible for gathering requirements, scoping and estimating projects, as well as hands-on implentation.<br />
+            p
+                | <b>The Richards Group - Click Here Labs - .NET Technical Lead 2011-2012</b><br />
+                | As a tech lead, I was responsible for ensuring the .NET developers were using best practices and staying on top of technology. I encouraged exploration of other technologies such as Ruby on Rails, Node.js and helped to form a mobile development group. I worked on major brand projects using ASP.NET MVC and Ruby on Rails. <br />
+            p
+                | <b>Freelance Consulting – 2010 – 2011</b><br />
+                | As a consultant, I lead development efforts for a pilot program to automate HR data verification for the entire PepsiCo enterprise including brands such as FritoLay and Quaker Oats. I was responsible liaising with key business stakeholders and third party consultants, identifying paint points in the business, designing an employee facing web application (IA/UX), development, and supporting the application during the pilot.<br />
+            p
+                | <b>Ariamedia – Product Development Lead & Partner (2006 - 2010)</b><br />
+                | Architected a multi-tenant content management system written in ASP.NET MVC/SQL Server/AJAX and  heavy emphasis on UI/UX. I administered a cloud infrastructure using Amazon Web Services. I became a partner in JadaLabs, a sister company formed to be the product development division of the company in 2008. Provided technical guidance for junior developers and lead many complex custom development projects to completion across many industries including insurance, investment, and city government.<br />
+            p
+                | <b>Software Architects – Programmer Consultant (2005 - 2006)</b><br />
+                | As a consultant, I was involved in several projects for clients such as ABC/Disney Radio and ConocoPhillips. I was responsible for all aspects of application development while providing the lead role on building a developer friendly style guide and providing UI/UX design. This was accomplished using CSS, JavaScript, and custom .NET web controls providing a strict layout guideline for building a consistent usable interface for end users. All projects involved ASP.NET, C#, and SQL Server using n-tier application architecture.<br />
+            p
+                | <b>Net Success – Web Applications Programmer (2004 – 2005)</b><br />
+                | I was responsible for the design and development of web applications for various clients including front end and back end programming using the leading web technologies. I maintained progress on multiple projects simultaneously on scheduled deadlines. About 80% of work was C#.NET /SQL Server on large applications requiring a broad range of functionality such as multiple user roles, systems integration, reporting, content management, user management, search, validation and logging while preserving a strict separation of style, interface, logic, data using object oriented programming techniques and web standards.<br />
+
+           
+    <!-- ---------------------------------------HIRE ME--------------------------------------------- -->
+
+
+
+    div( class="row-fluid extra-margin section" ) 
+        .span12
+            .divider
+                h2 hire me
+
+    div( id="hire-me", class="row-fluid extra-margin section")
+        .span6
+            p.big Hit me up. Give me a shout.
+            p Holla at your boy. Call me, text me, email me, message me, linkedin me, write on my wall, tag me, check me in, friend me, find me, google me, track me, comment on my blog, facetime me, skype me, tweet me, just come talk to me, or fill out this form to send me a message.
+        .span6
+
+    div( class="row-fluid")
+        .span7
+            form                               
+                label Full Name
+                input(type="text", placeholder="Your Full Name…")
+                
+                label Email Address
+                input(type="text", placeholder="Your Email Address…")
+
+                label Message
+                textarea(rows="6", class="input-xxlarge")
+
+                .form-actions
+                    button(type="submit", class="btn") Submit            
 
         
 #footer
-     
+
+script
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-36121400-1']);
+    _gaq.push(['_trackPageview']);
+ 
+    (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();

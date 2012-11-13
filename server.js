@@ -4,7 +4,8 @@
  */
 
 var express = require('express')
-  , routes = require('./routes');
+  , routes = require('./routes')
+  , api = require('./routes/api');
 
 var app = module.exports = express.createServer();
 
@@ -30,6 +31,9 @@ app.configure('production', function(){
 // Routes
 
 app.get('/', routes.index);
+app.get('/api', api.api);
+app.get('/api/sendmessage', api.sendmessage);
+app.post('/api/sendmessage', api.sendmessage);
 
 app.listen(process.env.port || 3000);
 
