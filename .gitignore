@@ -1,4 +1,15 @@
 #################
+## Node
+#################
+
+server.js.logs
+server.js.debug
+settings.json
+iisnode
+node_modules/.bin
+node_modules/express
+
+#################
 ## Eclipse
 #################
 
