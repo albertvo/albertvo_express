@@ -37,7 +37,7 @@ div(id="main", class="container-fluid")
     div( class="row-fluid extra-margin ")
         .span7
             h3 <i class="icon-info-sign icon-large"></i> About
-            p I'm an experienced full stack engineer looking for my next big challenge. I'm one of those mysterious hybrid developer/designers that occasionally surface. 
+            p I'm an experienced full stack engineer looking for my next big challenge. I'm one of those strange hybrid developer/designers that you sometimes find. 
             p When i'm not working or researching about cool new technology, I like to spend my time doing photography, basketball, and hanging out with my growing family and friends.
         .span5
             h3 <i class="icon-globe icon-large"></i>Get in Touch
@@ -241,15 +241,25 @@ div(id="main", class="container-fluid")
 
     div( class="row-fluid")
         .span7
-            form                               
+            div(class="alert alert-error fade in", style="display:none;")
+                button(type="button", class="close", data-dismiss="alert ")
+                    ×
+                | <strong>Doh!</strong> You might want to check your spelling or something.
+
+             div(class="alert alert-success fade in", style="display:none;")
+                button(type="button", class="close", data-dismiss="alert ")
+                    ×
+                | <strong>Woot!</strong> Thanks, I'll get back to you on that.
+            
+            form(id="contact-form", action="/api/nobots", method="post")                               
                 label Full Name
-                input(type="text", placeholder="Your Full Name…")
+                input(type="text", name="fullname", placeholder="Your Full Name…")
                 
                 label Email Address
-                input(type="text", placeholder="Your Email Address…")
+                input(type="text", name="emailaddress", placeholder="Your Email Address…")
 
                 label Message
-                textarea(rows="6", class="input-xxlarge")
+                textarea(rows="6", name="messagebody", class="input-xxlarge")
 
                 .form-actions
                     button(type="submit", class="btn") Submit            

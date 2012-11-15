@@ -38,7 +38,7 @@ $(function () {
         var $anchor = $(this);
         /*
         $('.scrolly').each(function (i) {
-            $(this).removeClass("active");
+        $(this).removeClass("active");
         });
         $anchor.addClass("active");
         */
@@ -51,5 +51,29 @@ $(function () {
         return false;
     });
 
-    ko.applyBindings(new ContactViewModel());
+    
+
+    $('#contact-form').submit(function (event) {
+        $.ajax({
+            type: "POST",
+            url: '/api/sendmessage',
+            dataType: 'json',
+            data: $(this).serialize(),
+            cache: false,
+            success: function (data, status) {
+                $(".alert-success").show();
+                $(".alert-error").hide();
+                $(".alert").alert();
+            },
+            error: function (data, status) {
+                $(".alert-error").show();
+                $(".alert-success").hide();
+                $(".alert-error").alert();
+            }
+        });
+
+        return false;
+    });
+
+    //ko.applyBindings(new ContactViewModel());
 });
